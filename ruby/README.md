@@ -27,9 +27,9 @@ docker build -t sinatra-app .
 To start the application, run:
 
 ```bash
-docker run -p 4567:4567 sinatra-app
+docker run -p 3000:3000 sinatra-app
 ```
 
 5. **Access the Web Service:**
 
-Open your web browser and navigate to `http://localhost:4567`, and you should see the message "Hello, World!".
+Open your web browser and navigate to `http://localhost:3000`, and you should see the message "Hello, World!".

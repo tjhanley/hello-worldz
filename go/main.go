@@ -13,6 +13,6 @@ func helloWorld(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	http.HandleFunc("/", helloWorld)
-	fmt.Println("Server is running at http://localhost:8080")
-	http.ListenAndServe(":8080", nil)
+	fmt.Println("Server is running at http://localhost:3000")
+	http.ListenAndServe(":3000", nil)
 }

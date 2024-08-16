@@ -23,9 +23,9 @@ docker build -t fastapi-poetry-app .
 To start the application, run:
 
 ```bash
-docker run -d -p 8000:8000 fastapi-poetry-app
+docker run -d -p 3000:3000 fastapi-poetry-app
 ```
 
 5. **Access the Web Service:**
 
-Open your web browser and navigate to `http://localhost:8000`, and you should see the message "Hello, World!".
+Open your web browser and navigate to `http://localhost:3000`, and you should see the message "Hello, World!".

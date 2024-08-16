@@ -17,8 +17,8 @@ COPY src ./src
 # Build the application
 RUN ./mvnw package
 
-# Expose port 8080
-EXPOSE 8080
+# Expose port 3000
+EXPOSE 3000
 
 # Run the application
-CMD ["java", "-jar", "target/hello-world-spring-boot-1.0-SNAPSHOT.jar"]
+CMD ["java", "-jar", "target/hello-world-spring-boot-1.0-SNAPSHOT.jar", "--server.port=3000"]

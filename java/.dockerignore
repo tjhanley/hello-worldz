@@ -54,7 +54,6 @@ env.bak/
 venv.bak/
 
 # Maven
-.mvn/
 target/
 pom.xml.tag
 pom.xml.releaseBackup

@@ -20,7 +20,7 @@ RUN poetry config virtualenvs.create false && poetry install --no-dev --no-inter
 COPY . /app/
 
 # Expose the port
-EXPOSE 8000
+EXPOSE 3000
 
 # Command to run the application in reload mode
-CMD ["poetry", "run", "uvicorn", "hello_world.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+CMD ["poetry", "run", "uvicorn", "hello_world.main:app", "--host", "0.0.0.0", "--port", "3000", "--reload"]
