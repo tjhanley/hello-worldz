@@ -8,24 +8,24 @@ A simple "Hello, World!" RESTful API using FastAPI.
 
 2. Navigate to the project directory:
 
-   ```bash
-   cd path/to/your/project
-   ```
+```bash
+cd path/to/your/project
+```
 
 3. Build the service:
 
-   ```bash
-   docker build -t fastapi-poetry-app .
-   ```
+```bash
+docker build -t fastapi-poetry-app .
+```
 
 4. Running the Application
 
 To start the application, run:
 
-    ```bash
-    docker run -d -p 8000:8000 fastapi-poetry-app
-    ```
+```bash
+docker run -d -p 8000:8000 fastapi-poetry-app
+```
 
 5. **Access the Web Service:**
 
-   Open your web browser and navigate to `http://localhost:8000`, and you should see the message "Hello, World!".
+Open your web browser and navigate to `http://localhost:8000`, and you should see the message "Hello, World!".

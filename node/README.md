@@ -12,24 +12,24 @@ These instructions will help you set up and run the project on your local machin
 
 2. Navigate to the project directory:
 
-   ```bash
-   cd path/to/your/project
-   ```
+```bash
+cd path/to/your/project
+```
 
 3. Build the service:
 
-   ```bash
-   docker build -t hello-world-express .
-   ```
+```bash
+docker build -t hello-world-express .
+```
 
 4. Running the Application
 
 To start the application, run:
 
-    ```bash
-    docker run -p 3000:3000 hello-world-express
-    ```
+```bash
+docker run -p 3000:3000 hello-world-express
+```
 
 5. **Access the Web Service:**
 
-   Open your web browser and navigate to `http://localhost:3000`, and you should see the message "Hello, World!".
+Open your web browser and navigate to `http://localhost:3000`, and you should see the message "Hello, World!".
