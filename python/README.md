@@ -2,15 +2,6 @@
 
 A simple "Hello, World!" RESTful API using FastAPI.
 
-## Getting Started
-
-These instructions will help you set up and run the project on your local machine.
-
-### Prerequisites
-
-- [Python 3.9+](https://www.python.org/)
-- [Poetry](https://python-poetry.org/)
-
 ### Installation
 
 1. Clone the repository or download the project files.
@@ -21,10 +12,10 @@ These instructions will help you set up and run the project on your local machin
    cd path/to/your/project
    ```
 
-3. Install the dependencies:
+3. Build the service:
 
    ```bash
-   poetry install
+   docker build -t fastapi-poetry-app .
    ```
 
 4. Running the Application
@@ -32,5 +23,9 @@ These instructions will help you set up and run the project on your local machin
 To start the application, run:
 
     ```bash
-    poetry run uvicorn hello_world.main:app --reload
+    docker run -d -p 8000:8000 fastapi-poetry-app
     ```
+
+5. **Access the Web Service:**
+
+   Open your web browser and navigate to `http://localhost:8000`, and you should see the message "Hello, World!".

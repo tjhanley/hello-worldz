@@ -20,16 +20,20 @@ These instructions will help you set up and run the project on your local machin
    cd path/to/your/project
    ```
 
-3. Initialize the Go module (if not already done):
+3. Build the service:
 
    ```bash
-   go mod tidy
+   docker build -t hello-world-go .
    ```
 
-Running the Application
+4. Running the Application
 
 To start the application, run:
 
     ```bash
-    go run main.go
+    docker run -p 8080:8080 hello-world-go
     ```
+
+5. **Access the Web Service:**
+
+   Open your web browser and navigate to `http://localhost:8080`, and you should see the message "Hello, World!".
