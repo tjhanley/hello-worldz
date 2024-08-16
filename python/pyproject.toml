@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "hello-world-fastapi"
+version = "0.1.0"
+description = "A simple Hello World RESTful API using FastAPI"
+authors = ["Your Name <youremail@example.com>"]
+readme = "README.md"
+packages = [{ include = "hello_world" }]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.92.0"
+uvicorn = "^0.20.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
