@@ -1,0 +1,110 @@
+# General
+.DS_Store
+.idea/
+*.iml
+*.class
+*.log
+*.out
+*.project
+*.py[cod]
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.test
+*.tgz
+
+# Byte-compiled / optimized / DLL files
+*.py[cod]
+# C extensions
+*.so
+
+# Packages
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+develop-eggs/
+.parts
+sdist/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+coverage.*
+.coverage
+.coverage.*
+.nox/
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.m4
+
+# Virtual environments
+.venv
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Maven
+.mvn/
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+release.properties
+
+# Gradle
+.gradle/
+build/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+yarn.lock
+
+# IntelliJ
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Eclipse
+.metadata
+*.classpath
+*.project
+*.settings/
+
+# Visual Studio Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Thumbnail cache files
+Thumbs.db
+
+# Nested Git directories
+**/.git
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Local environment files
+.env
+.env.*
+.envrc
+
+# OS-specific files
+.DS_Store
