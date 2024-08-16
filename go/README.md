@@ -9,6 +9,17 @@ These instructions will help you set up and run the project on your local machin
 ### Prerequisites
 
 - [Go](https://golang.org/) (version 1.20 or later)
+- Minikube setup
+
+```bash
+brew install minikube
+
+minikube start
+
+kubectl config use-context minikube
+
+eval $(minikube docker-env)
+```
 
 ### Installation
 
@@ -20,10 +31,10 @@ These instructions will help you set up and run the project on your local machin
 cd path/to/your/project
 ```
 
-3. Build the service:
+3. Build the `v1` image of the service:
 
 ```bash
-docker build -t hello-world-go .
+docker build -t hello-world-go:v1 .
 ```
 
 4. Running the Application
@@ -31,7 +42,7 @@ docker build -t hello-world-go .
 To start the application, run:
 
 ```bash
-docker run -p 3000:3000 hello-world-go
+docker run -p 3000:3000 hello-world-go:v1
 ```
 
 5. **Access the Web Service:**
