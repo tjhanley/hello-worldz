@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fastapi-poetry-app-deployment
+  labels:
+    app: fastapi-poetry-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: fastapi-poetry-app
+  template:
+    metadata:
+      labels:
+        app: fastapi-poetry-app
+    spec:
+      containers:
+      - name: fastapi-poetry-app
+        image: fastapi-poetry-app:v1
+        ports:
+        - containerPort: 3000

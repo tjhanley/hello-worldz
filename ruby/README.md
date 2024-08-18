@@ -19,7 +19,7 @@ cd path/to/your/project
 3. Build the service:
 
 ```bash
-docker build -t sinatra-app .
+docker build -t sinatra-app:v1 .
 ```
 
 4. Running the Application
@@ -27,7 +27,7 @@ docker build -t sinatra-app .
 To start the application, run:
 
 ```bash
-docker run -p 3000:3000 sinatra-app
+docker run -p 3000:3000 sinatra-app:v1
 ```
 
 5. **Access the Web Service:**

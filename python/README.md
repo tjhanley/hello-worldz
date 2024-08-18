@@ -15,7 +15,7 @@ cd path/to/your/project
 3. Build the service:
 
 ```bash
-docker build -t fastapi-poetry-app .
+docker build -t fastapi-poetry-app:v1 .
 ```
 
 4. Running the Application
@@ -23,7 +23,7 @@ docker build -t fastapi-poetry-app .
 To start the application, run:
 
 ```bash
-docker run -d -p 3000:3000 fastapi-poetry-app
+docker run -d -p 3000:3000 fastapi-poetry-app:v1
 ```
 
 5. **Access the Web Service:**

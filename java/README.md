@@ -31,13 +31,13 @@ The project includes a `Dockerfile` to build and run the application in a Docker
 Make sure you are in the project directory.
 
 ```bash
-docker build -t hello-world-spring-boot .
+docker build -t hello-world-spring-boot:v1 .
 ```
 
 2. **Run the Docker Container:**
 
 ```bash
-docker run -p 3000:3000 hello-world-spring-boot
+docker run -p 3000:3000 hello-world-spring-boot:v1
 ```
 
 3. **Access the Web Service:**
