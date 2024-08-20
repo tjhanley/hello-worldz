@@ -31,7 +31,7 @@ The project includes a `Dockerfile` to build and run the application in a Docker
 Make sure you are in the project directory.
 
 ```bash
-docker build -t hello-world-spring-boot:v1 .
+docker build --no-cache -t hello-world-spring-boot:v1 .
 ```
 
 2. **Run the Docker Container:**

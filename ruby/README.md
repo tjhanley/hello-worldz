@@ -19,7 +19,7 @@ cd path/to/your/project
 3. Build the service:
 
 ```bash
-docker build -t sinatra-app:v1 .
+docker build --no-cache -t sinatra-app:v1 .
 ```
 
 4. Running the Application

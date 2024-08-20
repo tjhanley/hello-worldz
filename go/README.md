@@ -34,7 +34,7 @@ cd path/to/your/project
 3. Build the `v1` image of the service:
 
 ```bash
-docker build -t hello-world-go:v1 .
+docker build --no-cache -t hello-world-go:v1 .
 ```
 
 4. Running the Application
